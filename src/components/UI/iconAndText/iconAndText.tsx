@@ -1,15 +1,22 @@
-import { Container } from './iconAndText-styles';
+import { Container } from './iconAndText-styles'
 
 type IconAndTextProps = {
   imageSrc: string
-  imageAlt: string
-  text: string,
-  onClickFn: () => void,
+  imageAlt?: string
+  text: string
+  onClickFn: () => void
+  classes?: string
 }
 
-const IconAndText = ({ imageSrc, imageAlt, text, onClickFn }: IconAndTextProps) => {
+const IconAndText = ({
+  imageSrc,
+  imageAlt,
+  text,
+  onClickFn,
+  classes,
+}: IconAndTextProps) => {
   return (
-    <Container onClick={onClickFn}>
+    <Container onClick={onClickFn} className={classes}>
       <img src={imageSrc} alt={imageAlt} />
       <p> {text} </p>
     </Container>

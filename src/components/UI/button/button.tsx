@@ -1,4 +1,4 @@
-// import { Container } from './styles';
+import { Container } from './button-styles';
 
 type ButtonProps = {
     type:  'submit' | 'reset' | 'button' | undefined;
@@ -8,7 +8,7 @@ type ButtonProps = {
 }
 
 const Button = ({type, text, onClickFn, classes}: ButtonProps) => {
-  return <button type={type} onClick={onClickFn} className={classes}> {text} </button>;
+  return <Container type={type} onClick={onClickFn} className={classes}> {text} </Container>;
 }
 
 export default Button;

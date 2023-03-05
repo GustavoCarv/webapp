@@ -11,6 +11,10 @@ export const Container = styled.div`
 
   background: var(--color-4-500);
   border-radius: 4px;
+
+  @media (max-width: 768px) {
+    width: 298px;
+  }
 `
 export const Content = styled.div`
   font-family: 'Titillium Web';

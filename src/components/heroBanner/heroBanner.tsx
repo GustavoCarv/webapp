@@ -1,5 +1,4 @@
 import { Container } from './heroBanner-styles'
-import 'flickity/css/flickity.css'
 
 import Flickity from 'react-flickity-component'
 import bannerImage_1 from '../../assets/imageBannerDesktop.png'

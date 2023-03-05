@@ -11,7 +11,11 @@ export const Container = styled.div`
 
   img {
     height: 100%;
-    width: 100% ;
-    object-fit: cover ;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    width: 298px;
   }
 `

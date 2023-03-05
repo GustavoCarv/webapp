@@ -7,6 +7,19 @@ export const Container = styled.section`
 
   padding-inline: 161px;
   margin-top: 24px;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 31px;
+    padding-right: 0;
+
+    .slick-slider {
+      margin: 0 -16px;
+    }
+
+    .slick-list {
+      margin: 0 16px;
+    }
+  }
 `
 export const ContainerBenefits = styled.ul`
   display: flex;

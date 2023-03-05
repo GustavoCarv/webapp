@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.section`
   padding-inline: 161px;
   margin-top: 80px;
 
@@ -23,7 +23,7 @@ export const Title = styled.h2`
   font-family: 'Titillium Web';
   font-weight: 700;
   font-size: 24px;
-  line-height: 37px;  
+  line-height: 37px;
 `
 
 export const Text = styled.p`

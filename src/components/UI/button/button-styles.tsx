@@ -45,7 +45,7 @@ export const Container = styled.button`
 
       font-size: 14px;
       line-height: 17px;
-      
+
       border-radius: 4px;
     }
   }
@@ -64,5 +64,14 @@ export const Container = styled.button`
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
+
+    @media screen and (max-width: 768px) {
+      width: 79px;
+      height: 26px;
+      border-radius: 4px;
+      position: relative;
+
+      inset: unset;
+    }
   }
 `

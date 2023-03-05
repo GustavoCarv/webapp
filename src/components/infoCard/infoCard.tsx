@@ -31,7 +31,6 @@ const InfoCard = () => {
           <source media="(max-width: 650px)" srcSet={bannerMobile} />
           <img src={banner} alt="Banner" />
         </picture>
-      
       </ImageContainer>
     </Container>
   )

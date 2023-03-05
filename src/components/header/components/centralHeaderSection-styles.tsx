@@ -10,6 +10,10 @@ export const Container = styled.div`
   height: 88px;
 
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const Logo = styled.div`

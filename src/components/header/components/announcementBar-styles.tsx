@@ -21,4 +21,9 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+    line-height: 18px;
+  }
 `

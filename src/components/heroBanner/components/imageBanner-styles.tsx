@@ -10,6 +10,10 @@ export const Container = styled.div`
     object-fit: cover;
     height: 100%;
   }
+
+  @media (max-width: 768px) {
+    height: 320px;
+  }
 `
 
 export const Content = styled.div`
@@ -29,6 +33,15 @@ export const Content = styled.div`
 
     margin-bottom: 40px;
     max-width: 472px;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+      line-height: 37px;
+
+      max-width: 240px;
+      width: 240px;
+      margin-bottom: 24px;
+    }
   }
 
   p {
@@ -38,5 +51,20 @@ export const Content = styled.div`
 
     margin-bottom: 32px;
     max-width: 472px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 17px;
+      
+      max-width: 240px;
+      width: 240px;
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    top: 63px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 `

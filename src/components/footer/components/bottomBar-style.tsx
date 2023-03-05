@@ -29,6 +29,7 @@ export const ContentCompany = styled.div`
   gap: 2.5px;
 
   span {
+    // TODO: Adicionar fonte
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;

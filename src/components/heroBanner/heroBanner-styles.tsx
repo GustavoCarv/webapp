@@ -32,4 +32,25 @@ export const Container = styled.section`
       background-color: var(--color-1-500);
     }
   }
+
+  @media (max-width: 768px) {
+    height: 320px;
+
+    .flickity-prev-next-button.previous {
+      left: 28px;
+    }
+
+    .flickity-prev-next-button.next {
+      right: 28px;
+    }
+
+    .flickity-page-dots {
+      bottom: 16px;
+
+      .dot {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
 `

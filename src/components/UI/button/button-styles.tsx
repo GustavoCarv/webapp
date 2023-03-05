@@ -38,6 +38,16 @@ export const Container = styled.button`
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+
+    @media (max-width: 768px) {
+      width: 76px;
+      height: 28px;
+
+      font-size: 14px;
+      line-height: 17px;
+      
+      border-radius: 4px;
+    }
   }
 
   &.button-newsletter {

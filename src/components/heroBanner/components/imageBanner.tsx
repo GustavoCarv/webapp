@@ -7,6 +7,7 @@ type ImageBannerProps = {
   buttonCTAtext: string
   isFirst: boolean
   imageSrc: string
+  imageSrcMobile: string
   imageAlt?: string
 }
 
@@ -16,11 +17,15 @@ const ImageBanner = ({
   buttonCTAtext,
   isFirst,
   imageSrc,
+  imageSrcMobile,
   imageAlt,
 }: ImageBannerProps) => {
   return (
     <Container>
-      <img src={imageSrc} alt={imageAlt} />
+      <picture>
+        <source media="(max-width: 650px)" srcSet={imageSrcMobile} />
+        <img src={imageSrc} alt={imageAlt} />
+      </picture>
       <Content>
         {isFirst ? <h1> {title} </h1> : <h2> {title} </h2>}
         <p>{text}</p>
@@ -30,7 +35,7 @@ const ImageBanner = ({
           onClickFn={() => {
             return
           }}
-          classes='button-CTA'
+          classes="button-CTA"
         />
       </Content>
     </Container>

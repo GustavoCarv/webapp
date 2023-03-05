@@ -3,6 +3,7 @@ import 'flickity/css/flickity.css'
 
 import Flickity from 'react-flickity-component'
 import bannerImage_1 from '../../assets/imageBannerDesktop.png'
+import bannerImageMobile from '../../assets/imageBannerMobile.png'
 
 import ImageBanner from './components/imageBanner'
 
@@ -16,6 +17,7 @@ const HeroBanner = () => {
           buttonCTAtext='Conferir'  
           isFirst
           imageSrc={bannerImage_1}
+          imageSrcMobile={bannerImageMobile}
         />
         <ImageBanner
           title="Promoções de Inverno"
@@ -23,6 +25,7 @@ const HeroBanner = () => {
           buttonCTAtext='Conferir'  
           isFirst={false}
           imageSrc={bannerImage_1}
+          imageSrcMobile={bannerImageMobile}
         />
       </Flickity>
     </Container>

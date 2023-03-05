@@ -6,6 +6,16 @@ export const Container = styled.section`
 
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding-left: 31px;
+    padding-right: 0;
+    gap: 24px;
+
+    margin-top: 24px;
+
+    flex-direction: column;
+  }
 `
 
 export const Content = styled.div`
@@ -15,6 +25,10 @@ export const Content = styled.div`
   gap: 16px;
 
   color: var(--color-2-900);
+
+  @media (max-width: 768px) {
+    padding-right: 60px;
+  }
 `
 
 export const Title = styled.h2`
@@ -37,4 +51,8 @@ export const Text = styled.p`
 
 export const ImageContainer = styled.div`
   flex-shrink: 1;
+
+  @media (max-width: 768px) {
+    padding-right: 31px;
+  }
 `

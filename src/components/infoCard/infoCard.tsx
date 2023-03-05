@@ -1,4 +1,5 @@
 import banner from '../../assets/infoCardBanner.png'
+import bannerMobile from '../../assets/infocardBannerMobile.png'
 
 import {
   Container,
@@ -26,7 +27,11 @@ const InfoCard = () => {
         </Text>
       </Content>
       <ImageContainer>
-        <img src={banner} alt="Banner" />
+        <picture>
+          <source media="(max-width: 650px)" srcSet={bannerMobile} />
+          <img src={banner} alt="Banner" />
+        </picture>
+      
       </ImageContainer>
     </Container>
   )

@@ -23,7 +23,7 @@ const CentralHeaderSection = () => {
       <SearchBarContainer>
         <SearchBarInput type="text" placeholder="O que você busca?" />
         <Button
-          type="submit"
+          type="button"
           text="Buscar"
           onClickFn={() => {
             return

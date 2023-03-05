@@ -4,6 +4,7 @@ import BrandBar from './components/brandBar'
 import Header from './components/header'
 import HeroBanner from './components/heroBanner'
 import InfoCard from './components/infoCard'
+import Newsletter from './components/newsletter'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <BenefitsBar />
       <BrandBar />
       <InfoCard />
+      <Newsletter />
     </div>
   )
 }

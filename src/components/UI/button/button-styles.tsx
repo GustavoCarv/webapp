@@ -18,6 +18,11 @@ export const Container = styled.button`
   border-radius: 8px;
   border: none;
 
+  &:hover {
+    box-shadow: unset;
+    transform: unset;
+  }
+
   &.button-primary {
     width: 119px;
     position: absolute;
@@ -33,5 +38,21 @@ export const Container = styled.button`
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  &.button-newsletter {
+    width: 131px;
+    position: absolute;
+    height: 42px;
+    right: 0px;
+
+    // TODO: Pensar em como corrigir depois
+    top: -1px;
+    right: -1px;
+
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
   }
 `

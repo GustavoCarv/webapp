@@ -6,6 +6,10 @@ export const Container = styled.form`
   display: flex;
   justify-content: center;
   gap: 50px;
+
+  padding-block: 40px;
+
+  border-block: 2px solid var(--color-4-500)
 `
 
 export const Title = styled.span`

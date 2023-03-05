@@ -24,4 +24,14 @@ export const Container = styled.button`
     height: 100%;
     right: 0px;
   }
+
+  &.button-CTA {
+    width: 119px;
+    height: 48px;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
 `

@@ -7,6 +7,11 @@ export const ContainerLinks = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 16px;
+    gap: 16px;
+  }
 `
 
 export const Title = styled.span`
@@ -18,7 +23,11 @@ export const Title = styled.span`
   color: var(--color-2-500);
 
   margin-bottom: 24px;
-  display: block ;
+  display: block;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+  }
 `
 
 export const Link = styled.a`
@@ -29,7 +38,16 @@ export const Link = styled.a`
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  text-decoration: none ;
+  text-decoration: none;
 
   color: var(--color-2-900);
+`
+
+export const Summary = styled.summary`
+  display: flex;
+  justify-content: space-between;
+
+  &::marker {
+    display: none;
+  }
 `

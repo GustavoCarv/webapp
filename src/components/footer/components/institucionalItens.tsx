@@ -1,4 +1,12 @@
-import { ContainerLinks, Title, Link } from './institucionalItens-style'
+import { BrowserView, MobileView } from 'react-device-detect'
+import {
+  ContainerLinks,
+  Title,
+  Link,
+  Summary,
+} from './institucionalItens-style'
+
+import plusSignal from '../../../assets/plusSignal.png'
 
 type link = {
   name: string
@@ -21,8 +29,19 @@ const InstitucionalItens = ({ links, title }: InstitucionalItensProps) => {
 
   return (
     <nav>
-      <Title>{title}</Title>
-      <ContainerLinks>{listOfLinks}</ContainerLinks>
+      <BrowserView>
+        <Title>{title}</Title>
+        <ContainerLinks>{listOfLinks}</ContainerLinks>
+      </BrowserView>
+      <MobileView>
+        <details>
+          <Summary>
+            <Title>{title}</Title>
+            <span>+</span>
+          </Summary>
+          <ContainerLinks>{listOfLinks}</ContainerLinks>
+        </details>
+      </MobileView>
     </nav>
   )
 }

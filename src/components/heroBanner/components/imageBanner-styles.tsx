@@ -6,6 +6,10 @@ export const Container = styled.div`
 
   position: relative;
 
+  picture {
+    height: 100%;
+  }
+
   img {
     object-fit: cover;
     height: 100%;
@@ -55,7 +59,7 @@ export const Content = styled.div`
     @media (max-width: 768px) {
       font-size: 14px;
       line-height: 17px;
-      
+
       max-width: 240px;
       width: 240px;
       margin-bottom: 16px;

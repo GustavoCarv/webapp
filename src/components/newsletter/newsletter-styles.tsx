@@ -17,6 +17,8 @@ export const Container = styled.form`
 
     flex-direction: column;
     gap: 8px;
+
+    background: var(--color-3-500);
   }
 `
 

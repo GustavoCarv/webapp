@@ -10,6 +10,14 @@ export const Container = styled.section`
 
   height: 85px;
   padding-inline: 161px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    padding: 24px 80px 32px;
+    gap: 32px;
+    height: auto;
+  }
 `
 
 export const ContainerSocialMedia = styled.div`

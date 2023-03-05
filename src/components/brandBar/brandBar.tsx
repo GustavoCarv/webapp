@@ -1,42 +1,22 @@
 import { Container, ContainerBenefits, Title } from './brandBar-styles'
-import BenefitCard from './components/benefitCard'
+import BrandCard from './components/brandCard'
 
-import iconFreight from '../../assets/icon-freight.png'
-import iconHome from '../../assets/icon-home.png'
-import iconWorld from '../../assets/icon-world.png'
-import iconChange from '../../assets/icon-change.png'
-import iconDiscount from '../../assets/icon-discount.png'
+import logoZara from '../../assets/logoZara.png'
+import logoMelissa from '../../assets/logoMelissa.png'
+import logoForever from '../../assets/logoForever.png'
+import logoAnn from '../../assets/logoAnn.png'
+import logoComma from '../../assets/logoComma.png'
 
 const BrandBar: React.FC = () => {
   return (
     <Container>
       <Title>Marcas Parceiras</Title>
       <ContainerBenefits>
-        <BenefitCard
-          imageSrc={iconWorld}
-          title="Produtos importados"
-          text="Produto de Alta Qualidade"
-        />
-        <BenefitCard
-          imageSrc={iconHome}
-          title="Estoque no Brazil"
-          text="Produtos mais perto de você!"
-        />
-        <BenefitCard
-          imageSrc={iconChange}
-          title="Trocas Garantidas"
-          text="Trocas em até 48 horas, vejas as regras"
-        />
-        <BenefitCard
-          imageSrc={iconDiscount}
-          title="Ganhe 5% off"
-          text="Pagando à vista no Cartão"
-        />
-        <BenefitCard
-          imageSrc={iconFreight}
-          title="Frete Grátis"
-          text="Em compras acima de R$ 499,00"
-        />
+        <BrandCard imageSrc={logoComma} />
+        <BrandCard imageSrc={logoMelissa} />
+        <BrandCard imageSrc={logoForever} />
+        <BrandCard imageSrc={logoZara} />
+        <BrandCard imageSrc={logoAnn} />
       </ContainerBenefits>
     </Container>
   )

@@ -11,6 +11,7 @@ export const Container = styled.div`
 export const ContainerBenefits = styled.ul`
   display: flex;
   gap: 15px;
+  padding-inline: 0;
 `
 
 export const Title = styled.p`

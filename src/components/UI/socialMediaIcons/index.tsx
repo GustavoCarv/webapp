@@ -1,3 +1,3 @@
-import MenuItem from './menuItem'
+import SocialMediaIcons from './socialMediaIcons'
 
-export default MenuItem
+export default SocialMediaIcons

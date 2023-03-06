@@ -11,6 +11,7 @@ import HeroBanner from './components/heroBanner'
 import InfoCard from './components/infoCard'
 import Newsletter from './components/newsletter'
 import ModalNewsletter from './components/modalNewsletter';
+import Shelf from './components/shelf';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <HeroBanner />
       <BenefitsBar />
       <BrandBar />
+      <Shelf />
       <InfoCard />
       <Newsletter />
       <Footer />

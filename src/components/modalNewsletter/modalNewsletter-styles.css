@@ -11,5 +11,6 @@
     .modal-newsletter {
         --padding: 31px;
         width: calc(100% - (var(--padding) * 2));
+        height: 298px;
     }
 }

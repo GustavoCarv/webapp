@@ -12,6 +12,8 @@ export const Container = styled.section`
     padding-left: 31px;
     padding-right: 0;
 
+    overflow: hidden ;
+
     .slick-slider {
       margin: 0 -16px;
     }

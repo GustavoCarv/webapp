@@ -35,6 +35,11 @@ export const Content = styled.div`
   align-items: center;
   gap: 12px;
 
+  @media screen and (max-width: 768px) {
+    margin-top: 47.5px;
+    margin-bottom: 25px
+  }
+
   input {
     margin-top: 13px;
     width: 322px;
@@ -52,7 +57,7 @@ export const Content = styled.div`
     color: var(--color-4);
 
     @media screen and (max-width: 768px) {
-        width: 258px;
+      width: 258px;
     }
   }
 
@@ -78,7 +83,7 @@ export const Content = styled.div`
     text-transform: uppercase;
 
     @media screen and (max-width: 768px) {
-        width: 258px;
+      width: 258px;
     }
   }
 `

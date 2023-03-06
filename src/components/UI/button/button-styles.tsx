@@ -74,4 +74,15 @@ export const Container = styled.button`
       inset: unset;
     }
   }
+
+  &.button-buy {
+    width: 100%;
+    height: 35px;
+
+    border-radius: 4px;
+
+    font-family: 'Titillium Web';
+    font-size: 16px;
+    line-height: 24px;
+  }
 `

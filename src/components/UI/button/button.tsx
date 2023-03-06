@@ -10,8 +10,7 @@ type ButtonProps = {
 const Button = ({ type, text, onClickFn, classes }: ButtonProps) => {
   return (
     <Container type={type} onClick={onClickFn} className={classes}>
-      {' '}
-      {text}{' '}
+      {text}
     </Container>
   )
 }

@@ -14,10 +14,11 @@ export const Container = styled.div`
   gap: 8px;
 
   @media screen and (max-width: 768px) {
-    min-height: 600px ;
+    min-height: 600px;
   }
 `
 export const ColorOption = styled.div`
+  cursor: pointer;
   width: 27px;
   height: 27px;
   border: 1px solid transparent;

@@ -25,9 +25,9 @@ const BrandBar: React.FC = () => {
       </BrowserView>
       <MobileView>
         <Slider slidesToShow={1.05} infinite={false}>
+          <BrandCard imageSrc={logoForever} />
           <BrandCard imageSrc={logoComma} />
           <BrandCard imageSrc={logoMelissa} />
-          <BrandCard imageSrc={logoForever} />
           <BrandCard imageSrc={logoZara} />
           <BrandCard imageSrc={logoAnn} />
         </Slider>

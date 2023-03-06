@@ -10,11 +10,13 @@ import Header from './components/header'
 import HeroBanner from './components/heroBanner'
 import InfoCard from './components/infoCard'
 import Newsletter from './components/newsletter'
+import ModalNewsletter from './components/modalNewsletter';
 
 function App() {
 
   return (
     <div className="App">
+      <ModalNewsletter /> 
       <Header />
       <HeroBanner />
       <BenefitsBar />

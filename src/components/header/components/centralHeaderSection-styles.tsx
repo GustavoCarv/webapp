@@ -12,7 +12,10 @@ export const Container = styled.div`
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
 
   @media (max-width: 768px) {
-    display: none;
+    padding-left: 16px;
+    padding-right: 28px;
+    justify-content: space-between;
+    align-items: center;
   }
 `
 
@@ -54,5 +57,17 @@ export const RightSideContainer = styled.div`
   display: flex;
   align-items: center;
 
-  height: 46px ;
+  height: 46px;
+`
+
+export const ContainerLeftMobile = styled.div`
+  display: flex;
+  gap: 20px;
+  align-items: center;
+`
+
+export const ContainerRightMobile = styled.div`
+  display: flex;
+  gap: 31px;
+  align-items: center;
 `

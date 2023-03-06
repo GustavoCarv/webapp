@@ -1,7 +1,8 @@
+import ReactModal from 'react-modal'
 // import { Container } from './styles';
 
 const ModalNewsletter = () => {
-  return <div />;
+  return <ReactModal isOpen={true}></ReactModal>
 }
 
-export default ModalNewsletter;
+export default ModalNewsletter

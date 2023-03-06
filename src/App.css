@@ -1,5 +1,6 @@
 :root {
   --color-4-500: #EFEFEF;
+  --color-4: #787D83;
   --color-3-500: #FAFAFA;
   --color-2-900: #000;
   --color-2-500: #353535;
@@ -26,6 +27,10 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+body.ReactModal__Body--open {
+  overflow: hidden;
 }
 
 img,

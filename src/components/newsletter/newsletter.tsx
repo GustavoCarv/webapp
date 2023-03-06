@@ -6,7 +6,7 @@ const Newsletter = () => {
     <Container>
       <Title>Recebe Nossa Newsletter</Title>
       <InputContainer>
-        <Input type="text" placeholder="Digite seu e-mail" />
+        <Input type="email" placeholder="Digite seu e-mail" />
         <Button
           type="submit"
           text="Buscar"

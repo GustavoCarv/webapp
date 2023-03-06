@@ -1,0 +1,15 @@
+.modal-newsletter {
+    width: 848px;
+    height: 529px;
+    background: var(--color-white);
+
+    position: relative;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .modal-newsletter {
+        --padding: 31px;
+        width: calc(100% - (var(--padding) * 2));
+    }
+}

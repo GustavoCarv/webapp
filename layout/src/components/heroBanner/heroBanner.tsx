@@ -20,7 +20,7 @@ const HeroBanner = () => {
         />
         <ImageBanner
           title="Promoções de Inverno"
-          text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+          text="Confiras os melhores looks para combinar com você nesse Outono"
           buttonCTAtext='Conferir'  
           isFirst={false}
           imageSrc={bannerImage_1}

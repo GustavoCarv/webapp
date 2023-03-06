@@ -8,13 +8,14 @@ export const ContainerColors = styled.div`
   padding-inline: 27px;
 `
 export const Container = styled.div`
-  width: 308px;
+  max-width: 308px;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 
   @media screen and (max-width: 768px) {
-    min-height: 600px;
+
   }
 `
 export const ColorOption = styled.div`

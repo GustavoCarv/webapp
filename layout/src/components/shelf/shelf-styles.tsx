@@ -3,6 +3,45 @@ import styled from 'styled-components'
 export const Container = styled.section`
   margin-top: 80px;
   padding-inline: 161px;
+  overflow: hidden;
+
+  .slick-list {
+    margin: 0 -16px;
+  }
+  .slick-slide > div {
+    padding: 0 8px;
+  }
+
+  .slick-next,
+  .slick-prev {
+    content: '';
+    width: 19px;
+    height: 32px;
+
+    top: 270px;
+    transform: translateY(0);
+
+    z-index: 100;
+    position: absolute;
+    background: red;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .slick-prev {
+    background: url('/assets/arrow-left.svg');
+    left: 0;
+  }
+
+  .slick-next {
+    background: url('/assets/arrow.svg');
+    right: 0;
+  }
 
   @media screen and (max-width: 768px) {
     padding-left: 31px;
@@ -16,8 +55,17 @@ export const Container = styled.section`
       margin: 0 -16px;
     }
 
+    .slick-slide > div {
+      padding: 0;
+    }
+
     .slick-list {
       margin: 0 16px;
+    }
+
+    .slick-next,
+    .slick-prev {
+      display: none !important;
     }
   }
 `
@@ -32,12 +80,13 @@ export const Title = styled.p`
   text-align: center;
 
   color: var(--color-2-500);
+  margin-bottom: 24px;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
     line-height: 37px;
 
-    margin-bottom: 16px ;
+    margin-bottom: 16px;
   }
 `
 

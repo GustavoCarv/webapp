@@ -13,7 +13,7 @@ const Shelf: React.FC = () => {
     <Container>
       <Title>As Mais Pedidas</Title>
       {isBrowser ? (
-        <ContainerProducts>
+        <Slider slidesToScroll={2} slidesToShow={5} infinite={true}>
           <ProductCard
             imageSrc={productImage}
             name="Faux Suede Mini Skirt"
@@ -68,8 +68,19 @@ const Shelf: React.FC = () => {
             onClickFn={() => {
               return
             }}
-          />{' '}
-        </ContainerProducts>
+          />
+          <ProductCard
+            imageSrc={productImage_2}
+            name="Ruched Rose Print Mini Skirt"
+            description="A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem."
+            price="R$ 320,00"
+            colors={['#1C1A19', '#D84E4B', '#CFC9B0', '#EAE9E5']}
+            buttonCTA="Adicionar"
+            onClickFn={() => {
+              return
+            }}
+          />
+        </Slider>
       ) : (
         <Slider slidesToShow={1.05} infinite={false}>
           {' '}
